@@ -1,3 +1,5 @@
+import cookieParser from 'cookie-parser'
+import cors from 'cors'
 import express from 'express'
 import {resolve} from 'path'
 import { Html } from '../client/html.js'
@@ -7,6 +9,9 @@ const PORT = 8080
 const __dirname = process.cwd()
 
 const middleware = [
+    cors(),
+    cookieParser,
+    express.json({limit: '50kb'}).
     express.static(resolve(__dirname, 'dist'))
 ]
 
