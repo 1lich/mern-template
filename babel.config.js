@@ -3,7 +3,7 @@ export default {
         '@babel/env',
         '@babel/react'
     ],
-    plugin: [
+    plugins: [
         '@babel/plugin-transform-runtime'
     ]
 }

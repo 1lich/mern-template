@@ -15,7 +15,7 @@ const config = {
         host: 'localhost',
         client: {
             overlay: {
-                warning: false,
+                warnings: false,
                 errors: true
             }
         },
